@@ -1,16 +1,7 @@
-# jsutil
-## clipboard.js
-### 使い方
-下記のようにinput text要素のvalueにコピーしたいテキストを記述しておく。
+# lib-js
+javascriptの自作の便利な関数ライブラリ。
 
-```html
-<script src="clipboard.js" />
-<span>
-  <input type="text" value="text" />
-  <input type="button" onclick="cp(this);" />
-</span>
-```
+standardディレクトリ配下のファイルはJS標準の機能のみで実装しています。
 
-あとはボタンをクリックするだけで、
-その親要素の子のinput要素からテキストをクリップボードにコピーする。
-
+jqueryディレクトリ配下のファイルは前提としてjqueryが読み込まれている必要がありま
+す。

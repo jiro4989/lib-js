@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>練習ページ</title>
-  <script src="./commons/timer.js"></script>
-</head>
-<body>
-  <div id="timer"></div>
-</body>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="./standard/clock.js"></script>
+    <script src="./standard/clipboard.js"></script>
+
+    <script>
+      window.onload = () => {
+        bindClock("clock");
+        bindCopyToClipboard("tf", "btn");
+      }
+    </script>
+  </head>
+  <body>
+    <div id="clock"></div>
+    <input id="tf" type="text" />
+    <input id="btn" type="button" value="copy to clipboard" />
+  </body>
 </html>
